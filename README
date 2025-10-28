@@ -1,0 +1,24 @@
+Steven Hopkins - stopkins@bu.edu
+Paul Adu - padu@bu.edu 
+
+CONTRIBUTIONS: 50/50
+
+NOTE: for the video, it's not obvious but we ran the suggested "for loop" provided in the lab to iterate through Hz values.
+I modified the watch command to update every .2 seconds, ending the command with "&"...
+Then, while watching the output, I pasted the command to loop/write Hz values to /dev/mytimer
+
+RESOURCES:
+
+claude.ai
+	- helped with implementing debouncing on the interrupts...but probably could have been handled with internal gpio functions
+	- helped with identifying and fixing a problem with ped_cycle_count where 1 red cycle occurred before red+yellow configureation
+	- helped with identifying a problem with the character device (I made a typo and hardcoded the wrong major namumber)
+	- helped fix syntax for mytimer_read and mytimer_write declarations (and helped find a missing bracket or two)
+
+https://www.kernel.org/doc/html/v5.0/driver-api/gpio/index.html
+https://linux-kernel-labs.github.io/refs/heads/master/lectures/interrupts.html
+https://elixir.bootlin.com/linux/v6.16/source/include/linux/interrupt.h
+
+Google search (mobaxterm help, compilation errors/warnings, etc.)
+
+
